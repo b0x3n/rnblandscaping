@@ -1,0 +1,659 @@
+///////////////////////////////////////////////////////////
+//  resources/css/style/projects.scss
+//
+
+    #Projects
+    {
+        position: relative;
+        float: left;
+
+        width: 100%;
+        height: auto;
+
+        min-height: 65vh;
+    }
+
+
+    #project_name,
+    #project_short,
+    #project_images,
+    #project_image_info
+    {
+        float: right;
+        width: 100%;
+    }
+
+    #project_services
+    {
+        height: 15vh;
+    }
+
+    #ProjectImages
+    {
+        position: relative;
+        float: left;
+
+        margin-top: 1vh;
+        padding: 1vh 1vh 0 1vh;
+
+        width: 100%;
+        height: 20vh;
+
+        border: solid 2px $secondary-fg;
+
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    #ProjectImages h2
+    {
+        font-size: 2.5vh;
+        color: $secondary-fg;
+        text-shadow: 1px 1px 1px #000;
+        margin: 1vh .75vw 1.5vh .75vw;
+    }
+
+        .ProjectImageThumb,
+        .ProjectImageThumbnail
+        {
+            position: relative;
+            float: left;
+
+            width: 12vh;
+            height: 12vh;
+
+            margin: 0 0 2vh 2vh;
+
+            border: solid 2px $secondary-bg;
+
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+
+            cursor: pointer;
+        }
+
+            .ProjectImageThumbDelete
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                padding-top: .5vh;
+                position: relative;
+                float: right;
+
+                width: 3vh;
+                height: 3vh;
+
+                font-size: 2vh;
+                font-weight: bolder;
+
+                background-color: #C00;
+                color: #FFF;
+
+                border-radius: 2px;
+                text-shadow: 1px 1px 2px #000;
+            }
+
+        #SelectedProjectImages
+        {
+            position: relative;
+            float: left;
+
+            margin: 0;
+            padding: 0;
+
+            width: auto;
+            height: auto;
+
+            border: none;
+        }
+
+    #ProjectsManager
+    {
+        position: relative;
+        float: left;
+
+        margin-top: 2vh;
+
+        width: 100%;
+        height: 45vh;
+
+        border: solid 1px $secondary-fg;
+
+        background-color: #FFF;
+
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        font-size: 1.75vh;
+
+        z-index: 999;
+    }
+
+        .ProjectRow,
+        .ProjectRowHeader
+        {
+            position: relative;
+            float: left;
+
+            width: 100%;
+            height: 4vh;
+        }
+
+            .ProjectRow:hover
+            {
+                background-color: #FAFAFA;
+                border: dotted 1px $secondary-fg;
+            }
+
+        .ProjectRowHeader
+        {
+            color: $primary-bg;
+            background-color: $secondary-bg;
+        }
+
+            .ProjectColumnName,
+            .ProjectColumnImages,
+            .ProjectColumnShort,
+            .ProjectColumnLong,
+            .ProjectColumnId
+            {
+                display: block;
+                position: relative;
+                float: left;
+
+                padding-top: 1vh;
+                padding-left: .25vw;
+
+                height: 4vh;
+
+                text-align: left;
+
+                border: dotted 1px #000;
+                font-size: 1.5vh;
+
+                overflow: hidden;
+
+                cursor: pointer;
+            }
+
+            .ProjectColumnName
+            {
+                width: 20%;
+            }
+
+                .ProjectImagePath,
+                .ProjectImageIcon
+                {
+                    position: relative;
+                    float: left;
+                    
+                    width: 4vh;
+                    height: 4vh;
+                    
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                }
+
+                .ProjectImageIcon
+                {
+                    margin-right: .5vw;
+                    margin-top: -.5vh;
+                    float: right;
+                    height: 3.5vh;
+                    width: 3.5vh;
+                }
+
+            .ProjectColumnImages
+            {
+                width: 30%;
+            }
+
+            .ProjectColumnShort
+            {
+                width: 25%;
+            }
+
+            .ProjectColumnLong
+            {
+                width: 25%;
+            }
+
+            .ProjectColumnId
+            {
+                visibility: hidden;
+                width: 0%;
+            }
+
+    
+
+    .ProjectSlider
+    {
+        position: relative;
+        float: left;
+
+        margin: 5vh 2vw 5vh 2vw;
+
+        width: calc(100% - 4vw);
+        height: 75vh;
+
+        min-height: 75vh;
+
+        background-color: rgba(128, 128, 128, 0.05);
+    }
+
+    .ProjectSlides
+    {
+        position: absolute;
+        
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+            
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        background-color: none;
+
+        display: none;
+        opacity: 0.01;
+    }
+
+        .ProjectSlide
+        {
+            position: absolute;
+            
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+                
+            overflow-x: auto;
+            overflow-y: hidden;
+
+            background-color: none;
+
+            display: none;
+            opacity: 0.01;
+        }
+
+            .ProjectSlideImage
+            {
+                position: relative;
+                float: left;
+
+                width: 100%;
+                height: 50vh;
+
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+
+                overflow: hidden;
+            }
+
+            .ProjectSlideImageOverlay
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                position: absolute;
+
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+                background-color: #FFF;
+                opacity: 0.90;
+            }
+
+            .ProjectSlideTitle
+            {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                
+                position: relative;
+                float: left;
+
+                left: 2vh;
+                width: auto;
+                height: 3.5vh;
+
+                padding: 1vh 2vh;
+
+                font-size: 2vh;
+                font-weight: bolder;
+
+                color: $secondary-fg;
+                text-shadow: 1px 1px 1px #000;
+
+                border-radius: 0px 2.5vh 0px 2.5vh;
+
+                background-color: $primary-bg;
+            }
+
+            .ProjectSlideInfo
+            {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+
+                position: relative;
+                clear: both;
+                float: left;
+
+                padding: 1vh 0 1vh 0;
+
+                top: 5.25vh;
+                left: 10%;
+                width: 80%;
+                height: auto;
+
+                min-height: 3.5vh;
+
+                font-size: 14px;
+                font-weight: bolder;
+
+                color: $primary-bg;
+                background-color: rgba(128, 128, 128, .75);
+
+                border-radius: 0 3.5vh;
+                overflow: hidden;
+
+                display: none;
+                opacity: 0.01;
+            }
+
+            .ProjectSlideTextWrapper
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                position: relative;
+                float: left;
+
+                padding: 1vh 2vw;
+
+                top: 5.25vh;
+                left: 10%;
+                width: 80%;
+                height: auto;
+
+                font-size: 16px;
+                font-weight: bolder;
+
+                color: $primary-bg;
+                background-color: rgba(128, 128, 128, .75);
+                text-shadow: 1px 1px 1px $secondary-bg;
+
+                border-radius: 0 3.5vh;
+                overflow: hidden;
+
+                display: none;
+                opacity: 0.01;
+            }
+
+            .ProjectSlideText
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                position: relative;
+                float: left;
+
+                width: 100%;
+                height: auto;
+            }
+
+            .ProjectSlideShort
+            {
+                display: flex;
+                align-items: center;
+                justify-content: right;
+
+                position: relative;
+                float: right;
+
+                margin-top: 0vh;
+                text-shadow: 1px 1px 2px #000;
+                text-align: center;
+
+                padding: 0 4vh 0 1vh;
+
+                width: 60%;
+                height: auto;
+
+                min-height: 3.5vh;
+            }
+
+            .ProjectSlideServices
+            {
+                display: flex;
+                align-items: top;
+                justify-content: right;
+
+                position: absolute;
+
+                padding: 1vh 0 1vh 0;
+
+                bottom: 5.25vh;
+                left: 10%;
+                width: 80%;
+                height: auto;
+
+                min-height: 12vh;
+
+                font-size: 14px;
+                font-weight: bolder;
+                overflow: hidden;
+            }
+
+            .ProjectSlideServicesColumn
+            {
+                position: relative;
+                float: right;
+
+                width: auto;
+                height: 15vh;
+            }
+
+                .ProjectSlideService
+                {
+                    position: relative;
+                    float: left;
+
+                    clear: both;
+
+                    padding: 1vh 1vh;
+
+                    margin: 0 0 1vh 1vh;
+
+                    width: auto;
+                    height: 4vh;
+
+                    color: $primary-bg;
+                    background-color: $secondary-fg;
+
+                    text-shadow: 1px 1px 1px #000;
+                    border-radius: 0 1.25vh;
+                    box-shadow: 1px 1px 2px #000;
+
+                    cursor: pointer;
+
+                    opacity: 0.01;
+                }
+
+
+    .ProjectPreviews
+    {
+        position: relative;
+        float: left;
+
+        width: 100%;
+        height: 18vh;
+
+        padding: 0;
+    }
+
+    .ProjectPreviewEmpty
+    {
+        position: relative;
+        float: left;
+        
+        width: 100%;
+        height: 24vh;
+
+        margin-bottom: 2.5vh;
+
+        background-color: rgba(220, 220, 220, 0.5);
+
+        min-height: 10vh;
+
+        padding: 0;
+
+        border-radius: 0 5vh;
+        overflow: hidden;
+    }
+
+    .ProjectPreview
+    {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+
+        margin-bottom: 2.5vh;
+        box-shadow: 1px 1px 2px #000;
+
+        //color: $secondary-fg;
+        background-color:none;
+        text-shadow: 1px 1px 2px #000;
+
+        min-height: 10vh;
+
+        padding: 1vh 2.5vh;
+        cursor: pointer;
+
+        border-radius: 0 5vh;
+        overflow: hidden;
+
+        opacity: 0.99;
+        display: none;
+    }
+
+    .ProjectPreview:last-child
+    {
+        margin-bottom: 0;
+    }
+
+        .ProjectPreviewTitle
+        {
+            color: $secondary-bg;
+            text-shadow: 1px 1px 1px $secondary-fg;
+
+            font-size: 16px;
+        }
+
+        .ProjectPreviewText
+        {
+            position: relative;
+            float: left;
+
+            height: 18vh;
+            width: calc(100% - 28vh);
+
+            margin: 2vh;
+            
+            background-color: #FFF;
+
+            border-radius: 0 0 0 2.5vh;
+
+            opacity: 0.01;
+            overflow: hidden;
+        }
+
+        .ProjectPreviewImage
+        {
+            position: absolute;
+
+            top: 1vh;
+            right: 2.5vh;
+            height: 18vh;
+            width: 20vh;
+
+            margin: 2vh;
+
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+
+            border-radius: 0 2.5vh 0 0;
+
+            opacity: 0.01;
+        }
+
+        .ProjectPreviewTitle
+        {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            
+            position: relative;
+            float: left;
+
+            top: 2vh;
+            left: 2vh;
+            width: auto;
+            height: 3.5vh;
+
+            padding: 1vh 2vh;
+
+            font-size: 2vh;
+            font-weight: bolder;
+
+            //color: $secondary-fg;
+            text-shadow: 1px 1px 1px #000;
+
+            border-radius: 0px 2.5vh 0px 2.5vh;
+
+            background-color: $secondary-fg;
+            color: $primary-bg;
+
+            opacity: 0.01;
+        }
+
+        .ProjectPreviewText p
+        {
+            position: absolute;
+
+            bottom: 1vh;
+            left: 1vh;
+            width: calc(100% - 4vh);
+            height: auto;
+
+            margin: 1vh;
+            padding: .5vw;
+
+            font-size: 12px;
+            font-weight: bolder;
+
+            color: $primary-bg;
+            background-color: rgba(128, 128, 128, .5);
+
+            text-align: center;
+            text-shadow: 1px 1px 2px #000;
+            // box-shadow: 5px 5px 10px rgba(128, 128, 128, .75);
+            // border-radius: 5px;
+
+            border-radius: 0 1.5vh;
+            overflow: hidden;
+
+            opacity: 0.01;
+        }

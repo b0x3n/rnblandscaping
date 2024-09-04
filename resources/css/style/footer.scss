@@ -1,0 +1,84 @@
+///////////////////////////////////////////////////////////
+//  resources/css/style/footer.scss
+//
+
+    #EmptyFooter
+    {
+        position: relative;
+        float: left;
+
+        width: 100%;
+        height: 12vh;
+
+        z-index: 40;
+
+        background-color: $primary-bg;
+    }
+
+    #Footer
+    {
+        display: flex;
+        align-items: center;
+
+        position: fixed;
+
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 6vh;
+
+        min-height: 6vh;
+        max-height: 12vh;
+
+        color: $secondary-fg;
+        background: linear-gradient(to bottom, $secondary-bg, #C0C0C0);
+
+        z-index: 400;
+    }
+
+        #SocialMediaLinks
+        {
+            position: absolute;
+
+            width: auto;
+            height: 5vh;
+        }
+
+            .SocialMediaLink
+            {
+                width: 5vh;
+                height: 5vh;
+
+                border: none;
+                opacity: 0.50;
+
+                cursor: pointer;
+            }
+
+                #FacebookLink,
+                #LinkedInLink,
+                #InstagramLink
+                {
+                    position: relative;
+                    float: left;
+
+                    margin-right: .5vw;
+
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                }
+
+                #FacebookLink
+                {
+                    background-image: url(../../../public/images/SocialMediaIcons/facebook.png);
+                }
+
+                #LinkedInLink
+                {
+                    background-image: url(../../../public/images/SocialMediaIcons/linkedin.jpg);
+                }
+
+                #InstagramLink
+                {
+                    background-image: url(../../../public/images/SocialMediaIcons/instagram.png);
+                }

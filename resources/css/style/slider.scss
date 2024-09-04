@@ -1,0 +1,222 @@
+///////////////////////////////////////////////////////////
+//  resources/css/style/Slider.scss
+//
+
+    .Slider
+    {
+        position: relative;
+        float: left;
+
+        margin: 5vh 2vw 5vh 2vw;
+
+        width: calc(100% - 4vw);
+        height: 75vh;
+
+        min-height: 75vh;
+
+        background-color: rgba(128, 128, 128, 0.05);
+    }
+
+        .Slide
+        {
+            position: relative;
+            float: left;
+            
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+                
+            overflow: hidden;
+
+            display: none;
+        }
+
+            .SlideImage
+            {
+                position: relative;
+                float:left;
+
+                top: 0%;
+                left: 0%;
+                width: 90vw;
+                height: 50vh;
+
+                background-repeat: no-repeat;
+                background-clip:content-box;
+
+                background-color: rgba(128, 128, 128, 0.05);
+
+                opacity: 0.01;
+            }
+
+            .SlideText
+            {
+                position: absolute;
+
+                top: 0px;
+                left: 5%;
+                width: 90%;
+                height: auto;
+
+                overflow: hidden;
+            }
+
+            .SlideTitle
+            {
+                position: absolute;
+
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 5vh;
+            }
+
+            .SlideShortText
+            {
+                position: absolute;
+
+                top: 1vw;
+                left: 0;
+                width: 100%;
+                height: auto;
+
+                margin: .5vw;
+                padding: .5vw;
+
+                font-size: 16px;
+                font-weight: bolder;
+
+                color: $primary-bg;
+                background-color: rgba(128, 128, 128, .75);
+
+                text-align: center;
+                text-shadow: 1px 1px 2px #000;
+                // box-shadow: 5px 5px 10px rgba(128, 128, 128, .75);
+                // border-radius: 5px;
+
+                border-radius: 0 1.5vh;
+                overflow: hidden;
+            }
+
+            .SlideLongText
+            {
+                position: absolute;
+
+                bottom: .5vw;
+                left: 0;
+                width: calc(100% - 1vw);
+                height: auto;
+
+                margin: .5vw;
+                padding: .5vw;
+
+                font-size: 14px;
+                font-weight: bolder;
+
+                color: $primary-bg;
+                background-color: rgba(128, 128, 128, .75);
+
+                text-shadow: 1px 1px 2px #000;
+                text-align: center;
+
+                border-radius: 0 1.5vh;
+                overflow: hidden;
+
+                // box-shadow: 5px 5px 10px rgba(128, 128, 128, .75);
+                // border-radius: 5px;
+            }
+
+            .SlideLongChar
+            {
+                position: relative;
+                float: left;
+
+                margin: 0;
+                padding: 0;
+
+                color: #FFF;
+            }
+
+        .SlideThumbs,
+        .ProjectSlideThumbs
+        {
+            position: absolute;
+
+            top: 50vh;
+            left: 0%;
+            width: 100%;
+            height: 25vh;
+
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        .ProjectSlideThumbs
+        {
+            background-image: none !important;
+        }
+            .SlideThumb,
+            .ProjectSlideThumb
+            {
+                position: relative;
+                float: left;
+
+                margin-left: calc(25% / 4);
+                margin-bottom: 1vh;
+
+                top: 10%;
+                width: 25%;
+                height: 80%;
+
+                box-shadow: 1px 1px 2px #000;
+
+                opacity: 0.50;
+                cursor: pointer;
+
+                border-radius: 0 2.5vh;
+                overflow: hidden;
+
+                background-color: rgb(220, 220, 220) !important;
+            }
+
+                .SlideThumbImage,
+                .ProjectSlideThumbImage,
+                .SlideThumbTitle,
+                .ProjectSlideThumbTitle
+                {
+                    position: relative;
+                    float: left;
+
+                    width: 100%;
+                    height: 80%;
+                }
+
+                .SlideThumbImage,
+                .ProjectSlideThumbImage
+                {
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                }
+
+                .SlideThumbTitle,
+                .ProjectSlideThumbTitle
+                {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 20%;
+
+                    font-size: 12px;
+                    font-weight: bolder;
+
+                    color: $secondary-fg;
+                    background: none;
+
+                    text-shadow: 1px 1px 2px #000;
+                }
+
+            // .SlideThumb:last-child
+            // {
+            //     margin: 0;
+            // }

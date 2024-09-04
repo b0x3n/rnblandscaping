@@ -1,0 +1,506 @@
+///////////////////////////////////////////////////////////
+//  resouorces/css/post/media.scss
+//
+
+
+    @media only screen and (min-width: 480px)
+    {
+        #Header,
+        #NavbarBanner,
+        #Content,
+        #Footer,
+        .Modal
+        {
+            padding: 0 .5vw;
+        }
+
+        #HeaderToggle
+        {
+            right: .5vw;
+        }
+
+        .SliderShortText
+        {
+            font-size: 20px;
+        }
+
+        .SliderLongText
+        {
+            font-size: 18px;
+        }
+    }
+
+
+    @media only screen and (min-width: 768px)
+    {
+        #Header,
+        #NavbarInner,
+        #Content,
+        #Footer,
+        .Modal
+        {
+            padding: 0 1vw;
+        }
+
+        #NavbarInner
+        {
+            display: flex;
+        }
+
+        #NavbarBanner
+        {
+            display: none;
+        }
+
+        #HeaderToggle
+        {
+            display: none;
+            right: 1vw;
+        }
+
+        #TelLink
+        {
+            padding-top: 1vh;
+            display: flex;
+            right: 1vw;
+        }
+
+        #Menu
+        {
+            display: none;
+        }
+
+        .Tab
+        {
+            padding-top: 1.1vh;
+            width: calc(100% / 6);
+            font-size: 1.8vh;
+        }
+
+        .Tabs
+        {
+            font-size: 18px;
+        }
+
+        // .ServiceEditor img
+        // {
+        //     display: block;
+        //     align-items: left;
+
+        //     margin-left: 0;
+            
+        //     width: 25vh;
+        //     height: 25vh;
+        // }
+
+        // .ServiceEditor div
+        // {
+        //     width: calc(100% - 27.5vh);
+        // }
+
+        #ServicesManager,
+        #ProjectsManager
+        {
+            font-size: 2.25vh;
+        }
+
+        .ServiceEditorImage
+        {
+            height: 20vw;
+            width: 20vw;
+        }
+        #service_name,
+        #service_short,
+        #service_long
+        {
+            width: calc(100% - 22vw);
+        }
+
+        .SlideImage,
+        .ProjectSlideImage
+        {
+            width: 60%;
+            height: 100%;
+        }
+
+        .ProjectSlideInfo
+        {
+            margin: 0;
+        }
+
+        .ProjectSlideTitle
+        {
+            margin: 0;
+        }
+        
+        .ProjectSlideInfo
+        {
+            font-size: 18px;
+        }
+
+        .ProjectSlideImage
+        {
+            height: 75vh;
+        }
+
+        .ProjectSlideShort
+        {
+            margin-top: 1vh;
+            width: 60%;
+        }
+
+        // .SlideText
+        // {
+        //     position: relative;
+        //     float: right;
+
+        //     width: 40%;
+        //     height: 100%;
+        // }
+
+
+        .SlideText
+        {
+            width: 50%;
+        }
+
+        .SlideThumbs,
+        .ProjectSlideThumbs
+        {
+            top: 0vh;
+            left: 60%;
+            width: 40%;
+            height: 100%;
+
+            padding: 0;
+
+            overflow-y: hidden;
+            overflow-x: auto;
+        }
+
+            .SlideThumb,
+            .ProjectSlideThumb
+            {
+                left: 7.5%;
+                width: 72.5%;
+                height: 10vh;
+
+                padding: 1vh 2.5vw;
+                margin-bottom: 2.5vh;
+
+                background-color: $primary-bg;
+            }
+
+                .SlideThumbTitle
+                {
+                    float: right;
+                    width: auto;
+                    height: 8vh;
+                    font-size: 16px;
+
+                    padding: 0;
+                }
+
+                .SlideThumbImage,
+                .ProjectSlideThumbImage
+                {
+                    margin: 0;
+                    padding : 0;
+                    width: 8vh;
+                    height: 8vh;
+                }
+
+        #ContentInnerHome
+        {
+            background-position:right;
+            background-size: auto 100%;
+        }
+
+        .SliderShortText
+        {
+            font-size: 22px;
+        }
+
+        .SliderLongText
+        {
+            font-size: 20px;
+        }
+
+        #ContentHomeText
+        {
+            width: 60%;
+
+            min-height: 100%;
+        }
+        
+        #ContentHomeProjects
+        {
+            margin: 5vh 0 0 0;
+        }
+
+        #ContentHomeServices
+        {
+            float: right;
+            width: 36%;
+
+            min-height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+            .ContentHomeService,
+            .ContactHomeService
+            {
+                padding: 0;
+                margin: 0 2.5vh 2.5vh 0;
+                height: 12vh;
+                width: calc(100% - 5vh);
+
+                cursor: pointer;
+            }
+
+            .ContentHomeServiceThumb
+            {
+                padding: 0;
+                margin: 0;
+                top: 1vh;
+                left: 5vh;
+                width: 10vh;
+                height: 10vh;
+            }
+
+            .ContentHomeServiceTitle
+            {
+                text-align: right;
+                padding: 0;
+                margin: 0;
+                width: calc(100% - 12vh);
+                font-size: 2.25vh !important;
+                height: 12vh;
+            }
+
+            .ContactHomeServiceInfo
+            {
+                width: 60%;
+                top: .5vh;
+                font-size: 16px;
+            }
+
+            .Contact-Title
+            {
+                float: right;
+            }
+            .Contact-Tel
+            {
+                float: right;
+            }
+
+        #ContentHomeText,
+        #ContentHomeProjects
+        {
+            margin-bottom: 5vh;
+            font-size: 2.5vh;
+        }
+
+        .SlideThumbTitle,
+        .ProjectSlideThumbTitle
+        {
+            float: right;
+            width: auto;
+            height: 6vh;
+            font-size: 18px;
+
+            padding: 2vh 0 0 0;
+        }
+
+        .ProjectSlideTitle
+        {
+            font-size: 2.5vh;
+            height: 5vh;
+        }
+
+        .ProjectPreviewImage
+        {
+            width: 24vh;
+            height: 22vh;
+        }
+        
+        .ProjectPreviewText
+        {
+            height: 22vh;
+            width: calc(100% - 32vh);
+        }
+
+        .ProjectPreviews
+        {
+            height: 22vh;
+        }
+        
+        .ProjectPreviewEmpty
+        {
+            height: 28vh;
+        }
+
+        .ProjectPreviewTitle
+        {
+            font-size: 2.5vh;
+            height: 5vh;
+        }
+
+        .ProjectPreviewText p
+        {
+            font-size: 16px;
+        }
+    }
+
+
+    @media only screen and (min-width: 1024px)
+    {
+        #Header,
+        #NavbarInner,
+        #Content,
+        #Footer,
+        .Modal
+        {
+            padding: 0 2.5vw;
+        }
+        
+        #HeaderToggle,
+        #TelLink
+        {
+            right: 2.5vw;
+        }
+
+        .NavbarLink,
+        .NavbarTel
+        {
+            font-size: 3.25vh;
+        }
+
+        .Tab
+        {
+            padding-top: .95vh;
+            font-size: 2.1vh;
+        }
+
+        .SlideThumbTitle,
+        .ProjectSlideThumbTitle
+        {
+            float: right;
+            width: auto;
+            height: 8vh;
+            font-size: 20px;
+
+            padding: 0;
+        }
+
+        .ProjectSlideShort
+        {
+            width: 60%;
+            justify-content: center;
+            margin-top: 1vh;
+            font-size: 2.5vh;
+        }
+
+        .ProjectSlideTitle
+        {
+            font-size: 2.5vh;
+            height: 5vh;
+        }
+
+        .ContentHomeServiceTitle
+        {
+            font-size: 3vh !important;
+        }
+
+        // .ProjectPreviewImage
+        // {
+        //     width: 26vh;
+        //     height: 24vh;
+        // }
+        
+        // .ProjectPreviewText
+        // {
+        //     height: 24vh;
+        //     width: calc(100% - 34vh);
+        // }
+
+        .ProjectPreviewTitle
+        {
+            font-size: 3vh;
+            height: 5.5vh;
+        }
+
+        .ProjectPreviewText p
+        {
+            font-size: 18px;
+        }
+    }
+
+
+    @media only screen and (min-width: 1200px)
+    {
+        #Header,
+        #NavbarInner,
+        #Content,
+        #Footer,
+        .Modal
+        {
+            padding: 0 5vw;
+        }
+        
+        #HeaderToggle,
+        #TelLink
+        {
+            right: 5vw;
+        }
+
+        .NavbarLink,
+        .NavbarTel
+        {
+            font-size: 4vh;
+        }
+
+        .Tab
+        {
+            padding-top: .80vh;
+            font-size: 2.25vh;
+        }
+    }
+    
+    @media only screen and (min-width: 1500px)
+    {
+        #Header,
+        #NavbarInner,
+        #Content,
+        #Footer,
+        .Modal
+        {
+            padding: 0 7.5vw;
+        }
+        
+        #HeaderToggle,
+        #TelLink
+        {
+            right: 7.5vw;
+        }
+    }
+    
+
+    @media only screen and (min-width: 1600px)
+    {
+        #Header,
+        #NavbarInner,
+        #Content,
+        #Footer,
+        .Modal
+        {
+            padding: 0 10vw;
+        }
+        
+        #HeaderToggle,
+        #TelLink
+        {
+            right: 10vw;
+        }
+    }

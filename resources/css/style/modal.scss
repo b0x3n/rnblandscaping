@@ -1,0 +1,24 @@
+///////////////////////////////////////////////////////////
+//  resources/css/style/modal.scss
+//
+
+    .Modal
+    {
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+
+        width: 100%;
+
+        padding: 2.5vh 0;
+        
+        background-color: rgba(255, 255, 255, 0.90);
+
+        z-index: 99;
+
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        opacity: 0.01;
+        display: none;
+    }

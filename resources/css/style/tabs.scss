@@ -1,0 +1,167 @@
+///////////////////////////////////////////////////////////
+//  resources/css/style/tabs.scss
+//
+
+    .Tabs
+    {
+        position: relative;
+        float: left;
+
+        width: 100%;
+        height: 70vh;
+
+        margin: 5vh 0px 4vh 0px;
+
+        font-size: 14px;
+
+        background-color: #FAFAFA;
+    }
+    
+        .TabsHeader
+        {
+            position: relative;
+            float: left;
+
+            width: 100%;
+            height: auto;
+        }
+
+            .Tab
+            {
+                padding-top: .5vh;
+                padding-left: 1vh;
+                margin-top: -1vh;
+                
+                position: relative;
+                float: right;
+
+                width: 100%;
+                height: 5vh;
+
+                color: #E0E0E0;
+                background-color: $secondary-fg;
+
+                border: solid 1px #90B010;
+                border-bottom: none;
+
+                text-shadow: 1px 1px 2px #000;
+
+                border-radius: 1vh 1vh 0 0;
+
+                text-align: center;
+
+                cursor: pointer;
+
+                overflow: hidden;
+            }
+
+                .TabSelected
+                {
+                    color: $secondary-fg;
+                    background-color: #FAFAFA;
+
+                    opacity: 0.99;
+
+                    text-decoration: none !important;
+                    text-shadow: none;
+
+                    border: solid 2px $secondary-fg;
+                    border-bottom: none;
+
+                    cursor: default;
+                }
+
+
+        .TabsContent
+        {
+            position: relative;
+            float: left;
+
+            width: 100%;
+        }
+
+            .TabContent
+            {
+                position: relative;
+                float: left;
+
+                padding: 1vw;
+                
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: auto;
+
+                min-height: 100%;
+
+                overflow-x: hidden;
+                overflow-y: auto;
+
+                background-color: none;
+
+                border: solid 2px $secondary-fg;
+                border-top: none;
+    
+                border-radius: 0 0 1vh 1vh;
+
+                visibility: hidden;
+                display: none;
+            }
+
+    .TabForm,
+    .TabForm textarea
+    {
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    .TabForm:input[type=text],
+    .TabForm textarea
+    {
+        width: 100%;
+    }
+
+    // textarea
+    // {
+    //     text-align: left;
+    // }
+
+    .DashboardText
+    {
+        font-size: 14px;
+        color: $secondary-bg;
+
+        margin-bottom: 5vh;
+    }
+
+    .TabsOption
+    {
+        position: relative;
+        float: right;
+
+        color: $primary-bg;
+        background-color: $secondary-fg;
+
+        padding: .5vh 1vw;
+        margin-top: 1vh;
+        margin-right: 1px;
+
+        font-size: 2vh;
+
+        border: none;
+        border-radius: .5vh;
+
+        box-shadow: 1px 1px 2px #000;
+        text-shadow: 1px 1px 2px #000;
+
+        cursor: pointer;
+    }
+
+        .TabsOption:hover
+        {
+            box-shadow: none;
+            margin-top: calc(1vh + 1px);
+            margin-right: 0px;
+            margin-bottom: -1px;
+        }
